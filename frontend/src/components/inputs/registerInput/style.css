@@ -1,0 +1,190 @@
+.inputRegisterIcon {
+  position: relative;
+}
+.inputRegisterIcon i {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+.inputErrorBorder {
+  border-color: brown !important;
+}
+
+/* Media query */
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width: 320px) and (max-width: 424px) {
+  .inputRegisterWrapper {
+    width: 100%;
+  }
+  .inputRegisterWrapper input {
+    font-size: 13px;
+  }
+  .RegisterErrorWrapper {
+    padding: 6px 10px;
+    width: 100%;
+    border-radius: 4px;
+    margin: 4px 0;
+    font-size: 13px;
+  }
+  .firstNameError,
+  .lastNameError {
+    position: relative;
+    background: #e44040;
+    color: #fff;
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 4px;
+    margin: 5px 0;
+    font-size: 12px;
+  }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width: 425px) and (max-width: 640px) {
+  .inputRegisterWrapper {
+    width: 100%;
+  }
+  .inputRegisterWrapper input {
+    font-size: 14px;
+    border: 1px solid var(--orang-1-color);
+  }
+  .firstNameError,
+  .lastNameError {
+    position: relative;
+    background: #e44040;
+    color: #fff;
+    padding: 6px 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-size: 13px;
+  }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width: 641px) and (max-width: 767px) {
+  .inputRegisterWrapper {
+    width: 100%;
+  }
+  .firstNameError,
+  .lastNameError {
+    position: relative;
+    background: #e44040;
+    color: #fff;
+    padding: 12px 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .inputRegisterWrapper {
+    width: 100%;
+  }
+  .RegisterErrorWrapper {
+    padding: 12px 10px;
+    margin: 10px 0;
+  }
+  .inputRegisterIcon i {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+  }
+  .firstNameError {
+    position: absolute;
+    background: #e44040;
+    color: #fff;
+    padding: 12px 10px;
+    width: fit-content;
+    border-radius: 5px;
+    margin: 10px 0;
+    left: -9.5rem;
+    top: 4.8rem;
+  }
+  .lastNameError {
+    position: absolute;
+    background: #e44040;
+    color: #fff;
+    padding: 12px 10px;
+    width: fit-content;
+    border-radius: 5px;
+    margin: 10px 0;
+    right: -8.5rem;
+    top: 4.8rem;
+  }
+  .error_arrow_right {
+    border-right: 10px solid #b94a48;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: -10px;
+    top: 20px;
+  }
+  .error_arrow_left {
+    border-left: 10px solid #b94a48;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    right: -10px;
+    top: 20px;
+  }
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width: 1024px) {
+  .inputRegisterWrapper {
+    width: 100% !important;
+  }
+  .inputRegisterWrapper input {
+    outline: none;
+    border: 2px solid var(--orang-1-color);
+    width: 100%;
+    height: 40px;
+    font-size: 17px;
+    padding-left: 10px;
+    border-radius: 5px;
+  }
+
+  .firstNameError {
+    position: absolute;
+    background: #e44040;
+    color: #fff;
+    padding: 12px 10px;
+    width: fit-content;
+    border-radius: 5px;
+    margin: 10px 0;
+    left: -9.5rem;
+    top: 4.8rem;
+  }
+  .lastNameError {
+    position: absolute;
+    background: #e44040;
+    color: #fff;
+    padding: 12px 10px;
+    width: fit-content;
+    border-radius: 5px;
+    margin: 10px 0;
+    right: -8.5rem;
+    top: 4.8rem;
+  }
+  .error_arrow_right {
+    border-right: 10px solid #b94a48;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: -10px;
+    top: 20px;
+  }
+  .error_arrow_left {
+    border-left: 10px solid #b94a48;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    right: -10px;
+    top: 20px;
+  }
+}
+
+/* Media query */

@@ -1,0 +1,549 @@
+/*-------------- Home Header  -------------- */
+header {
+  position: fixed;
+  top: 0;
+  height: 56px;
+  z-index: 99;
+  /* background-color: rgb(104, 104, 104); */
+  background-color: var(--bg-primary);
+  width: 100%;
+  box-shadow: 1px 8px 15px -7px var(--shadow-2);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+  color: var(--color-primary);
+}
+
+/*-------------- Home Header Left  -------------- */
+
+.header_left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 5px 1rem;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle img {
+  width: 100%;
+  height: 100%;
+}
+.search {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--bg-forth);
+  padding: 10px 32px 10px 10px;
+  cursor: text;
+  border-radius: 50px;
+  width: 80%;
+}
+.search input {
+  height: 30px;
+  width: 100%;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+/*--------- Home Header Left ==> Search_Menu -------- */
+.search_area {
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  background-color: var(--bg-primary);
+  box-shadow: 0px 9px 9px var(--shadow-1), inset 0 0 0 0 var(--shadow-inset);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: all 0.2s;
+  --webkit-font-smoothing: antialiased;
+  min-height: 400px;
+  max-height: 70vh;
+  padding: 10px 32px 10px 2.5rem;
+  z-index: 20;
+  /* padding: 1.5rem; */
+}
+
+.search_wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.search_area .search {
+  width: 262px;
+  gap: 4px;
+}
+.search_history_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 14px;
+}
+.search_history_header span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.search_history_header a {
+  color: var(--orang-1-color);
+  cursor: pointer;
+}
+
+/*-------------- Home Header Center -------------- */
+.header_center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.meddle_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.15s all ease-in;
+}
+
+.active {
+  border-bottom: 3px solid var(--orang-1-color);
+}
+
+/*-------------- Home Header Right -------------- */
+
+.header_right {
+  display: flex;
+  align-items: center;
+  padding: 5px 1rem;
+  justify-content: flex-end;
+  gap: 14px;
+}
+.portfolio_link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.15s all ease-in;
+  padding: 3px 8px;
+  border-radius: 30px;
+}
+
+.portfolio_link_profile {
+  background-color: var(--bgOrang-2-color);
+}
+.header_profile_user {
+  color: var(--orang-1-color);
+}
+.circle_icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-third);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.15s all ease-in;
+}
+.circle_icon svg {
+  cursor: pointer;
+}
+
+/*--------- Home Header Right ==> All_Menu -------- */
+.menu {
+  position: absolute;
+  top: 50px;
+  right: -150px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  background-color: var(--bg-secondary);
+  box-shadow: 0px 9px 9px var(--shadow-1), inset 0 0 0 0 var(--shadow-inset);
+  border-radius: 8px;
+  transition: all 0.2s;
+  --webkit-font-smoothing: antialiased;
+  height: 90vh;
+  width: 575px;
+  padding: 10px 10px 10px 10px;
+  user-select: none;
+}
+.menu_header {
+  font-size: 24px;
+  height: 50px;
+  width: 100%;
+}
+.menu_content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.left_menu_content {
+  background-color: var(--bg-primary);
+  box-shadow: 0px 3px 3px var(--shadow-1), inset 0 0 0 0 var(--shadow-inset);
+  border-radius: 5px;
+  padding: 10px 0px 15px 10px;
+  height: fit-content;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 5px 0;
+}
+.left_menu_search .search {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--bg-forth);
+  padding: 2px 0px 2px 10px;
+  cursor: text;
+  border-radius: 30px;
+}
+
+.left_menu_body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.left_menu_body_sec {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.body_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 15px;
+}
+
+.left_menu_body_content {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  gap: 10px;
+}
+.content p {
+  font-weight: 600;
+  color: var(--orang-1-color);
+}
+.content span {
+  display: block;
+  width: 90%;
+  text-align: justify;
+  font-size: 14px;
+  color: var(--color-secondary);
+}
+
+.right_menu_content {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  gap: 10px;
+  background-color: var(--bg-primary);
+  box-shadow: 0px 3px 3px var(--shadow-1), inset 0 0 0 0 var(--shadow-inset);
+  border-radius: 5px;
+  padding: 10px 0px 15px 10px;
+}
+
+.right_content {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.block_item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.block_item p {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.block_item p:hover {
+  color: var(--orang-1-color);
+}
+
+/*--------- Home Header Right ==> User Menu -------- */
+.user_menu {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--bg-secondary);
+  box-shadow: 0px 9px 9px var(--shadow-1), inset 0 0 0 0 var(--shadow-inset);
+  border-radius: 8px;
+  transition: all 0.2s;
+  --webkit-font-smoothing: antialiased;
+  height: fit-content;
+  width: 350px;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  user-select: none;
+}
+
+.user_menu_header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  padding: 8px 0;
+  border-radius: 5px;
+}
+.info_user {
+  font-size: 17px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.info_user:hover {
+  color: var(--orang-1-color);
+}
+
+.info_user span {
+  font-size: 14px;
+  color: var(--color-secondary);
+}
+
+.user_body_menuItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.user_menuItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+.user_menuItem > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow_right {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* -------- Home Header Right ==> User Menu => SettingPrivacy -------- */
+
+.arrow_sett {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -------- Home Header Right ==> User Menu => Display -DARK-MODE- -------- */
+.chose_darkMode {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.chose_darkMode label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.chose_darkMode label:first-child input {
+  accent-color: var(--orang-1-color);
+}
+.chose_darkMode label:last-child input {
+  accent-color: #312f2f;
+}
+
+/* Media query */
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width: 320px) and (max-width: 424px) {
+  .header_center {
+    gap: 0px;
+  }
+  .meddle_icon {
+    width: 40px;
+  }
+
+  .search input {
+    display: none;
+  }
+  .search_area input {
+    display: block;
+  }
+  .search {
+    padding: 10px;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  .header_center {
+    justify-content: center;
+  }
+  .meddle_icon:nth-child(2),
+  .meddle_icon:nth-child(3),
+  .meddle_icon:nth-child(4),
+  .meddle_icon:nth-child(5) {
+    display: none;
+    visibility: hidden;
+  }
+  .portfolio_link {
+    display: none;
+    visibility: hidden;
+  }
+  .menu {
+    width: 300px;
+  }
+  .menu_content {
+    flex-direction: column;
+  }
+
+  .messenger,
+  .notification {
+    display: none;
+    visibility: hidden;
+  }
+  .user_menu {
+    width: 300px;
+  }
+
+  .menu {
+    top: 50px;
+    right: -60px;
+
+    width: 350px;
+  }
+  .left_menu_content,
+  .right_menu_content {
+    width: 90%;
+  }
+  .left_menu_search input {
+    display: block;
+  }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width: 425px) and (max-width: 640px) {
+  .header_center {
+    gap: 0px;
+  }
+  .meddle_icon {
+    width: 40px;
+  }
+
+  .search input {
+    display: none;
+  }
+  .search_area input {
+    display: block;
+  }
+  .search {
+    padding: 10px;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  .header_center {
+    justify-content: center;
+  }
+  .meddle_icon:nth-child(2),
+  .meddle_icon:nth-child(3),
+  .meddle_icon:nth-child(5) {
+    display: none;
+    visibility: hidden;
+  }
+  .portfolio_link span {
+    display: none;
+    visibility: hidden;
+  }
+  .menu {
+    width: 400px;
+  }
+  .menu_content {
+    flex-direction: column;
+  }
+  .left_menu_content,
+  .right_menu_content {
+    width: 90%;
+  }
+  .left_menu_search input {
+    display: block;
+  }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width: 641px) and (max-width: 767px) {
+  .header_center {
+    gap: 0px;
+  }
+  .meddle_icon {
+    width: 40px;
+  }
+
+  .search input {
+    display: none;
+  }
+  .search_area input {
+    display: block;
+  }
+  .left_menu_search input {
+    display: block;
+  }
+  .search {
+    padding: 10px;
+    cursor: pointer;
+    width: fit-content;
+  }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header_center {
+    gap: 0px;
+  }
+  .meddle_icon {
+    width: 65px;
+  }
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .header_center {
+    gap: 7px;
+  }
+  .meddle_icon {
+    width: 80px;
+  }
+}
+
+/* Media query */

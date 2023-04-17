@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+html {
+  overflow-y: scroll;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+svg,
+i {
+  cursor: pointer;
+}
+:root {
+  --bg-primary: #fff;
+  --bg-secondary: #f0f2f5;
+  --bg-third: #e4e6eb;
+  --bg-forth: #f0f2f5;
+  --color-primary: #050505;
+  --color-secondary: #65676b;
+  --divider: #ced0d4;
+  --dark-bg-primary: #18191a;
+  --dark-bg-secondary: #242526;
+  --dark-bg-third: #3a3b3c;
+  --dark-color-primary: #242526;
+  --dark-color-secondary: #b0b3b8;
+  --white-color: #ffffff;
+  --orang-1-color: #d37800;
+  --orang-2-color: #d38300;
+  --orang-3-color: #ffb742;
+  --orang-4-color: #f7dba4;
+  --bgOrang-2-color: #85570e34;
+  --green-color: #359222;
+  --red-color: #da1e1e;
+  --blue-color: #0d0944;
+  --blue-1-color: #1876f2;
+  --light-blue-color: #fae4d8;
+  --border-color: #ccced2;
+  --shadow-1: rgba(0, 0, 0, 0.2);
+  --shadow-2: rgba(0, 0, 0, 0.1);
+  --shadow-3: rgba(0, 0, 0, 0.3);
+  --shadow-4: rgba(0, 0, 0, 0.25);
+  --shadow-inset: rgba(255, 255, 255, 0.5);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--orang-2-color);
+  border-radius: 10px;
+}
+
+/* Style Button */
+.orangBtn {
+  border: none;
+  outline: none;
+  background: var(--orang-1-color);
+  padding: 0.5px 12px;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.whiteBtn {
+  border: none;
+  outline: none;
+  background: var(--light-blue-color);
+  padding: 0.5px 12px;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+/* Style Button */
+
+.blur {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(10, 10, 10, 0.8);
+  /* background: rgba(255, 255, 255, 0.8); */
+  z-index: 99;
+}
+
+/* ------- Hovers -------- */
+.hover1:hover {
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+.link:hover {
+  cursor: pointer;
+  color: var(--orang-1-color);
+}
+.hover2:hover {
+  color: var(--color-third);
+}
+/* ------- Hovers -------- */
+
+/* Media query */
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width: 320px) {
+}
+/* Media query */

@@ -1,0 +1,65 @@
+.Right_Side_Wrapper {
+  padding: 15px 10px;
+  height: calc(100vh - 56px);
+  background-color: var(--bg-primary);
+  box-shadow: 0 1px 2px var(--shadow-1);
+}
+
+.header_right_side {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.Sponsored {
+  font-size: 1rem;
+  color: var(--color-secondary);
+}
+
+.right_side_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right_side_contact div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+
+.right_side_contact div div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right_side_contact a {
+  color: var(--color-primary);
+}
+.left_right_contact_Item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Media query */
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width: 320px) and (max-width: 424px) {
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width: 425px) and (max-width: 640px) {
+  .visible_heden_text {
+    display: none;
+    visibility: hidden;
+  }
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width: 641px) and (max-width: 767px) {
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width: 1024px) and (max-width: 1200px) {
+}

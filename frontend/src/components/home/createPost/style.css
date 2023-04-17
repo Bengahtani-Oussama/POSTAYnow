@@ -1,0 +1,134 @@
+.createPost {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 20px;
+  gap: 20px;
+}
+.header_createPost {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* cursor: pointer; */
+}
+.createPost_txt {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  cursor: text;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.icon_createPost {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.iconCreate {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.iconCreate p {
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.iconCreate p:hover {
+  color: var(--orang-1-color);
+}
+
+.createPost_txt {
+  background: linear-gradient(
+    to right,
+    var(--orang-3-color) 3%,
+    white 3%,
+    #4d4d4d 3%
+  );
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 320px;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+/* Media query */
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width: 320px) and (max-width: 424px) {
+  .createPost_txt {
+    font-size: 14px;
+  }
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 160px;
+    }
+    100% {
+      background-position: 0;
+    }
+  }
+  .iconCreate p {
+    display: none;
+  }
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width: 425px) and (max-width: 640px) {
+  .iconCreate p {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 250px;
+    }
+    100% {
+      background-position: 0;
+    }
+  }
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width: 641px) and (max-width: 767px) {
+  .iconCreate p {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 290px;
+    }
+    100% {
+      background-position: 0;
+    }
+  }
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width: 1024px) and (max-width: 1200px) {
+}

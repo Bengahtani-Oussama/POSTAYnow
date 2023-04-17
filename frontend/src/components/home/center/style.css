@@ -1,0 +1,61 @@
+.Center_Side_Wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100vh - 56px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 25px;
+}
+.posts {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.card {
+  height: fit-content;
+  width: 90%;
+  background-color: var(--bg-primary);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px var(--shadow-1);
+}
+
+/* width */
+.Center_Side_Wrapper::-webkit-scrollbar {
+  width: 0px;
+}
+
+.verification_profile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.verification_btn p {
+  color: var(--orang-1-color);
+}
+.verification_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Media query */
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width: 320px) and (max-width: 424px) {
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width: 425px) and (max-width: 640px) {
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width: 641px) and (max-width: 767px) {
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width: 1024px) and (max-width: 1200px) {
+}

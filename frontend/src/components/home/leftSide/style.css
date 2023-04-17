@@ -1,0 +1,126 @@
+/* width */
+.left_Side_Wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.left_Side_Wrapper {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  height: calc(100vh - 56px);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 15px 10px;
+  background-color: var(--bg-primary);
+  box-shadow: 0 1px 2px var(--shadow-1);
+}
+
+.left_Side_top {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+.left_Side_Item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.left_Side_Item-1 span {
+  position: relative;
+  padding-left: 15px;
+  color: var(--orang-1-color);
+}
+.left_Side_Item-1 span::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 6px;
+  background: var(--orang-1-color);
+  left: 5px;
+  top: 10px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.left_Side_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.left_Side_bottom_items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  place-content: center;
+}
+
+.left_Side_top a,
+.left_Side_bottom a {
+  transition: all 0.2s;
+}
+a:hover {
+  color: var(--orang-1-color);
+}
+
+.visible {
+  display: block;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.arrow svg {
+  width: 38px;
+}
+
+/* Media query */
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width: 320px) and (max-width: 424px) {
+  .left_Side_Wrapper {
+    visibility: hidden;
+    display: none;
+  }
+  .left_Side_bottom_items {
+    display: none;
+  }
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width: 425px) and (max-width: 640px) {
+  .left_Side_Wrapper {
+    visibility: hidden;
+    display: none;
+  }
+  .left_Side_bottom_items {
+    display: none;
+  }
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width: 641px) and (max-width: 767px) {
+  .visible_heden_tabler {
+    display: none;
+    visibility: hidden;
+  }
+  .left_Side_bottom_items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .left_Side_bottom_items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .left_Side_bottom_items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

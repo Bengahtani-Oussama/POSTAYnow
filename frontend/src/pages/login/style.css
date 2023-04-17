@@ -1,0 +1,444 @@
+/* ---------- Login ---------- */
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginWrapper {
+  height: 100vh;
+  background-color: var(--bg--secondary);
+}
+.loginWrap {
+  height: 78vh;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--color-primary);
+}
+.loginHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.loginHeader img {
+  width: 300px;
+  height: 150px;
+}
+.loginHeader span {
+  font-size: 20px;
+  text-align: center;
+}
+
+.loginForm {
+  flex: 2;
+}
+
+.loginFormWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-primary);
+  box-shadow: 0 1px 2px var(--shadow-1);
+  padding: 1rem;
+  height: fit-content;
+  width: 600px;
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+.loginFormWrap form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.login-fr-btn {
+  width: 450px;
+}
+.loginFormWrap button {
+  width: 100%;
+  height: 40px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.ForgetPassword {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  color: var(--orang-2-color);
+  margin-top: 5px;
+  margin-bottom: 2rem;
+}
+
+.ForgetPassword span:hover {
+  text-decoration: underline;
+}
+
+.OpenSingUp {
+  width: 250px !important;
+  background: var(--blue-color);
+}
+
+.SingBusinessWrap {
+  display: flex;
+  margin: 0 auto;
+  gap: 4px;
+  justify-content: center;
+}
+
+.SingBusiness {
+  transition: 0.25s all ease-in;
+  padding-right: 4px;
+}
+.SingBusiness:hover {
+  color: var(--orang-2-color);
+}
+
+/* ---------- Login ---------- */
+
+/* ---------- register ---------- */
+
+.register {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--bg-primary);
+  color: var(--color-primary);
+  padding: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px var(--shadow-1);
+  width: 350px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.registerFormWrap button {
+  width: 100%;
+  height: 40px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.registerHeader {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.registerHeader i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.registerHeader span:first-of-type {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.registerHeader span:last-of-type {
+  font-size: 1rem;
+  color: var(--color-secondary);
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.inlineFirstInput {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.columnFirstInput {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.HC_BerthDay {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--color-secondary);
+  margin-bottom: 5px;
+}
+
+.Grid_Regst {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  height: 40px;
+  width: 100%;
+}
+.Grid_RegstGender {
+  display: flex;
+  gap: 10px;
+  height: 35px;
+  width: 250px;
+}
+
+.Grid_Regst select {
+  border: 1px solid var(--orang-2-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Grid_RegstGender label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--orang-2-color);
+  cursor: pointer;
+}
+
+.btnRegister {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+/* ---------- register ---------- */
+
+/* ---------- Footer ---------- */
+footer {
+  padding: 1rem;
+  height: 22vh;
+}
+.footerWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+.footerWrap a {
+  font-size: 14px;
+  color: var(--color-secondary);
+}
+.footerWrap a:hover {
+  text-decoration: underline;
+}
+.footerPOSATY {
+  margin-top: 1rem;
+}
+
+/* ---------- Footer ---------- */
+
+/* Media query */
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width: 320px) and (max-width: 424px) {
+  .loginWrap {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
+  .loginHeader {
+    flex: none;
+  }
+  .loginHeader img {
+    width: 180px;
+    height: 85px;
+  }
+  .loginHeader span {
+    width: 300px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .loginForm {
+    flex: none;
+  }
+
+  .loginFormWrap {
+    width: 300px;
+  }
+
+  .login-fr-btn {
+    width: 280px;
+  }
+  .loginFormWrap button {
+    height: 35px;
+    font-size: 14px;
+  }
+  .btnRegister button {
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .OpenSingUp {
+    width: 200px !important;
+  }
+
+  .SingBusinessWrap {
+    width: 300px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .SingBusiness {
+    transition: 0.25s all ease-in;
+    padding-right: 4px;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+  .footerWrap {
+    gap: 2px 10px;
+  }
+  .footerWrap a {
+    font-size: 12px;
+  }
+  .footerPOSATY {
+    text-align: center;
+  }
+
+  .register {
+    width: 270px;
+  }
+  .Grid_Regst {
+    height: 30px;
+  }
+  .Grid_Regst label {
+    width: 100px;
+    font-size: 14px;
+    gap: 5px;
+  }
+  .Grid_RegstGender label {
+    width: 100px;
+    font-size: 14px;
+    gap: 5px;
+  }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width: 425px) and (max-width: 640px) {
+  .loginWrap {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
+  .loginHeader {
+    flex: none;
+  }
+  .loginHeader img {
+    width: 250px;
+    height: 120px;
+  }
+  .loginHeader span {
+    width: 300px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .loginForm {
+    flex: none;
+  }
+
+  .loginFormWrap {
+    width: 400px;
+  }
+
+  .login-fr-btn {
+    width: 350px;
+  }
+  .loginFormWrap button {
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .OpenSingUp {
+    width: 200px !important;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+  .register {
+    width: 400px;
+  }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width: 641px) and (max-width: 767px) {
+  .loginWrap {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
+  .loginHeader {
+    flex: none;
+  }
+  .loginHeader img {
+    width: 300px;
+    height: 150px;
+  }
+  .loginHeader span {
+    width: 500px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .loginForm {
+    flex: none;
+  }
+
+  .register {
+    width: 450px;
+  }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .loginWrap {
+    gap: 10px;
+  }
+  .loginHeader img {
+    width: 300px;
+    height: 150px;
+  }
+  .loginHeader span {
+    font-size: 18px;
+  }
+  .loginFormWrap {
+    width: 550px;
+  }
+  .login-fr-btn {
+    width: 400px;
+  }
+  .register {
+    width: 700px;
+  }
+  .inlineFirstInput {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width: 1024px) {
+  .register {
+    width: 700px;
+  }
+  .inlineFirstInput {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+/* Media query */

@@ -1,0 +1,213 @@
+.reset {
+  height: 100vh;
+  display: grid;
+  background-color: var(--bg-secondary);
+}
+
+.reset_header {
+  background-color: var(--bg-primary);
+  width: 100%;
+  box-shadow: 1px 8px 15px -7px var(--shadow-2);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.reset_header .logo_text {
+  font-size: 22px;
+  font-weight: 700;
+  background: -webkit-linear-gradient(
+    var(--orang-1-color),
+    var(--orang-3-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.reset_header .headerBtn,
+.reset_card_form .formLoginUser,
+.send_mailBottom .headerBtn {
+  font-size: 18px;
+  font-weight: 600;
+  width: 150px;
+  height: 35px;
+}
+
+.headerLoginUser {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.reset_card_header {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.reset_content {
+  height: calc(78vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset_content .card {
+  /* background: rgb(187, 181, 181); */
+  width: 800px;
+  height: fit-content;
+  padding: 30px;
+}
+
+.reset_card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.reset_card_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+  margin: 0 auto;
+}
+.reset-fr-btn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+.reset-fr-btn button:last-child {
+  background: var(--blue-color);
+}
+
+.reset_footer .footer {
+  height: 20vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*------ Send Email Form Style ------*/
+.send_mailTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.send_mailLeft {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.send_mailLeft label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.send_mailLeft p {
+  font-size: 20px;
+}
+.send_mailLeft span {
+  font-size: 15px;
+}
+.send_mailRight {
+  flex: 1;
+}
+
+.send_mailRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.send_mailRight .css-1wlk0hk-MuiAvatar-root {
+  width: 150px;
+  height: 150px;
+}
+
+.send_mailRight div {
+  text-align: center;
+}
+
+.send_mailBottom {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+}
+/* Media query */
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width: 320px) and (max-width: 424px) {
+  .reset_header {
+    padding: 0 10px;
+  }
+  .reset_header .logo_text {
+    display: none;
+  }
+
+  .reset_content .card {
+    width: 350px;
+  }
+  .reset_card_form form {
+    width: 300px;
+  }
+  .reset_card_form form input {
+    width: 300px;
+  }
+  .send_mailTop {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .send_mailRight .css-1wlk0hk-MuiAvatar-root {
+    width: 80px;
+    height: 80px;
+  }
+  .send_mailLeft p {
+    font-size: 16px;
+  }
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width: 425px) and (max-width: 640px) {
+  .reset_header {
+    padding: 0 15px;
+  }
+  .reset_content .card {
+    width: 350px;
+  }
+  .reset_card_form form {
+    width: 300px;
+  }
+  .reset_card_form form input {
+    width: 300px;
+  }
+  .send_mailRight .css-1wlk0hk-MuiAvatar-root {
+    width: 80px;
+    height: 80px;
+  }
+  .send_mailLeft p {
+    font-size: 16px;
+  }
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width: 641px) and (max-width: 767px) {
+  .reset_header {
+    padding: 0 25px;
+  }
+  .reset_content .card {
+    width: 550px;
+  }
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .reset_content .card {
+    width: 600px;
+  }
+}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width: 1024px) and (max-width: 1200px) {
+}
