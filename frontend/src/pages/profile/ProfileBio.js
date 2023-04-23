@@ -17,11 +17,18 @@ import { useSelector } from 'react-redux';
 import ADD from '../../svg/add';
 import CreateDetails from '../../components/profile/CreateDetails';
 
-export default function ProfileBio({ detail, visitor, setOtherName }) {
+export default function ProfileBio({
+  detail,
+  visitor,
+  setOtherName,
+  username,
+  loading,
+}) {
   const { user } = useSelector((state) => ({ ...state }));
   const [details, setDetails] = useState();
 
-  console.log('details', details);
+  // console.log('user', user);
+  // console.log('details', details);
   const initialDetails = {
     bio: details?.bio ? details?.bio : '',
     otherName: details?.otherName ? details.otherName : '',
@@ -89,7 +96,7 @@ export default function ProfileBio({ detail, visitor, setOtherName }) {
     <div className='profile_post_left_bio  card'>
       <div className='profile_left_header'>Introduction :</div>
       <div className='profile_left_bio'>
-        {!visitor && (
+        {!visitor ? (
           <div className='add_bio_btn w-100'>
             <span>{details?.bio ? details?.bio : 'No Bio Yet'}</span>
             {!showBio && (
@@ -103,6 +110,16 @@ export default function ProfileBio({ detail, visitor, setOtherName }) {
               </Button>
             )}
           </div>
+        ) : (
+          <>
+            {loading ? (
+              'loading...'
+            ) : (
+              <div className='profile_NoBio_text'>
+                {username} Does not have a bio yet
+              </div>
+            )}
+          </>
         )}
 
         {showBio && (
@@ -151,7 +168,8 @@ export default function ProfileBio({ detail, visitor, setOtherName }) {
             !details?.youtube &&
             !details?.tiktok &&
             !details?.twitter &&
-            !details?.github && (
+            !details?.github &&
+            !visitor && (
               <div className='profile_NoBio_text'>You can add your details</div>
             )}
           {details?.job && details?.workplace ? (

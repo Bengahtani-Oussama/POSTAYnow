@@ -49,7 +49,7 @@ exports.sendVerificationEmail = (email, name, url) => {
     <div class="logo">
       <img
         alt="LOGO"
-        src="https://res.cloudinary.com/df9iy1rz7/image/upload/v1679864466/4_c2sapr.png"
+        src="https://res.cloudinary.com/postay/image/upload/v1679864464/2_otvr35.png"
         style="width: 175px; height: 80px"
       />
     </div>
@@ -84,7 +84,7 @@ exports.sendVerificationEmail = (email, name, url) => {
       >
         Action requite : Activate your
         <img
-          src="https://res.cloudinary.com/df9iy1rz7/image/upload/c_scale,w_64/v1679864463/6_skcmwm.png"
+          src="https://res.cloudinary.com/postay/image/upload/v1679864463/6_skcmwm.png"
           alt="POSTAY"
           style="width: 30px"
         />
@@ -159,7 +159,7 @@ exports.sendVerificationEmail = (email, name, url) => {
       "
     >
       <img
-        src="https://res.cloudinary.com/df9iy1rz7/image/upload/v1679873597/downloads_swonbj.png"
+        src="https://res.cloudinary.com/postay/image/upload/v1679873597/downloads_swonbj.png"
         alt="Get answers"
         style="width: 50px; margin-left: 30px"
       />
@@ -185,8 +185,9 @@ exports.sendVerificationEmail = (email, name, url) => {
           "
         >
           <img
-            src="https://res.cloudinary.com/df9iy1rz7/image/upload/c_limit,h_32,w_32/v1679870915/logo_apple__cltlfa7xve82_large_s5afa8.png"
+            src="https://res.cloudinary.com/postay/image/upload/v1679870915/logo_apple__cltlfa7xve82_large_s5afa8.png"
             alt=""
+            style="width: 20px"
           />
           <span>For Appel</span>
         </div>
@@ -206,8 +207,9 @@ exports.sendVerificationEmail = (email, name, url) => {
           "
         >
           <img
-            src="https://res-console.cloudinary.com/df9iy1rz7/thumbnails/transform/v1/image/upload/Y19zY2FsZSx3XzMy/v1679871101/YW5kcm9pZF9oYmpzc2k=/template_primary"
+            src="https://res.cloudinary.com/postay/image/upload/v1679871101/android_hbjssi.png"
             alt=""
+            style="width: 20px"
           />
           <span>For Android</span>
         </div>

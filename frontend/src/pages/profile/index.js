@@ -33,6 +33,7 @@ export default function Profile() {
     profile: [],
     error: false,
   });
+  console.log('profile',profile);
 
   // Get list Images States
   const [photos, setPhotos] = useState({});
@@ -142,6 +143,8 @@ export default function Profile() {
                 setOtherName={setOtherName}
                 visitor={visitor}
                 detail={profile.details}
+                username={profile.username}
+                loading={loading}
               />
               <ProfileUserPhotos loading={loading} photos={photos} />
               <ProfileUserFriend friends={profile.friends} />
